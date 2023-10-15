@@ -14,13 +14,20 @@
 * Twitter: [@CodeCara](https://twitter.com/CodeCara)
 * GitHub: [@niloc95](https://github.com/niloc95)
 * LinkedIn: [@https:\/\/www.linkedin.com\/in\/nilo-cara\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/nilo-cara\/)
+* Date: October 2023
+### Production Setup
+* Hosting: AWS and AWS Lightsail
+* Build - Bitnami Linux Django Package
+
+
+
 
 ## Setup
 Local hosting(On Personal Computer)
-Install, setup Python - 
-Windows - https://python.land/installing-python#Install_Python_on_Windows
-MacOs - https://python.land/installing-python#Installation_on_MacOS
-Linux - https://python.land/installing-python#Install_Python_on_Linux
+Install Python
+* Windows - https://python.land/installing-python#Install_Python_on_Windows
+* MacOs - https://python.land/installing-python#Installation_on_MacOS
+* Linux - https://python.land/installing-python#Install_Python_on_Linux
 
 ### GitHub Setup (Optional)
 To push your Django project to GitHub, follow these steps:
@@ -64,7 +71,7 @@ git push -u origin master
 Setting up a Django project involves several steps, including installing Django, creating a project directory, setting up a virtual environment, and creating a Django project within that environment. Here's a step-by-step guide to help you set up a Django project:
 
 ### 1. Prerequisites:
-Ensure you have Python installed on your system. You can download Python from the official website: https://www.python.org/downloads/
+Ensure you have Python installed on your system. You can download Python from the official website: https://www.python.org/downloads/. 
 
 ### 2. Create a Virtual Environment (Optional):
 It's recommended to create a virtual environment to isolate your project dependencies. This step is optional but highly recommended to avoid conflicts between different projects.
@@ -127,3 +134,28 @@ Note: An "app" can encompass a wide range of functionalities. For instance, on y
 python manage.py startapp myapp
 ```
 
+### Side note for Production git write access - git remote set-url origin https://PASTE_YOUR_GITHUB_TOKEN_HERE@github.com/niloc95/Frontend : this what it should look like:
+
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-c189e656bf.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-c189e656bf.sock'
+}
+Missing or invalid credentials.
+Error: connect ECONNREFUSED /run/user/1000/vscode-git-c189e656bf.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-c189e656bf.sock'
+}
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/niloc95/Frontend.git/'
+
+```sh 
+# git remote set-url origin https://PASTE_YOUR_GITHUB_TOKEN_HERE@github.com/niloc95/Frontend
+git remote set-url origin https://ghp_XXXXB5Q3q50ISZ25cBgX5F9XVBGBTTYTYERER@github.com/niloc95/Frontend
+```
