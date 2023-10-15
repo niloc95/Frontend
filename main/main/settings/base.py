@@ -100,11 +100,21 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#Configure SMTP Email Settings: 
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.office365.com'  # Example: 'smtp.gmail.com' for Gmail
+EMAIL_PORT = 587  # Port for SMTP (587 for TLS, 465 for SSL, 25 for non-secure)
+EMAIL_USE_TLS = False  # Set this to False for non-TLS, True for TLS
+EMAIL_USE_SSL = True  # Set this to True if you're using SSL
+EMAIL_HOST_USER = 'za_admin@frontend.co.za'  # Your SMTP email address
+EMAIL_HOST_PASSWORD = '7856z%8e%6^6sL!bA#3vX2*P'  # Your SMTP email password
+EMAIL_SUBJECT_PREFIX = '[Your App Name] '  # Optional prefix for email subjects
+DEFAULT_FROM_EMAIL = 'za_admin@frontend.co.za'

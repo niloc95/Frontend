@@ -1,0 +1,76 @@
+/* Master Sytle Sheets */
+
+body::before {
+  display: block;
+  content: '';
+  height: 0px;
+}
+  
+  #map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .news-input {
+      width: 100%;
+    }
+  }
+
+  .bg-image {
+    background-image: url("/images/nilo_about_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+
+  }
+
+  .bg-footer {
+    background-color: rgba(41,41,41,0.44);
+  }
+
+.hero-nilo {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust this to your desired height */
+    overflow: hidden;
+    
+}
+  
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #fff;
+}
+
+.bg-img-hero {
+    background: url("../images/Johannesburg.webp") rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  animation: fadeInDown 0.5s;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
