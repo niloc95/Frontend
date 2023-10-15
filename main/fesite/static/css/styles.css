@@ -19,7 +19,7 @@ body::before {
   }
 
   .bg-image {
-    background-image: url("../images/nilo_about_bg.jpg");
+    background-image: url("/images/nilo_about_bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
