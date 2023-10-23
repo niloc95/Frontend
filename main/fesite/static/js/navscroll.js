@@ -3,7 +3,7 @@
 
   // Function to toggle the 'sticky' class
   function toggleSticky() {
-      if (window.scrollY > 1000) {
+      if (window.scrollY > 800) {
           navbar.classList.add('sticky');
       } else {
           navbar.classList.remove('sticky');

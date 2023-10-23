@@ -1,30 +1,123 @@
 /* Master Sytle Sheets */
+/* Font */
+@font-face{
+  font-family: 'Blinker-Black-900';
+  src: url('../fonts/Blinker-Black.woff2') format('woff2'),
+}
 
+@font-face{
+  font-family: 'Blinker-ExtraBold-800';
+  src: url('../fonts/Blinker-ExtraBold.woff2') format('woff2'),
+}
+
+@font-face{
+  font-family: 'Blinker-Bold-700';
+  src: url('../fonts/Blinker-Bold.woff2') format('woff2'),
+}
+
+@font-face{
+  font-family: 'Blinker-SemiBold-600';
+  src: url('../fonts/Blinker-SemiBold.woff2') format('woff2'),
+}
+
+@font-face{
+  font-family: 'Blinker-Headline-500';
+  src: url('../fonts/Blinker-Headline.woff2') format('woff2'),
+}
+
+@font-face{
+  font-family: 'Blinker-Regular-400';
+  src: url('../fonts/Blinker-Regular.woff2') format('woff2'),
+}
+
+@font-face{
+  font-family: 'Blinker-Light-300';
+  src: url('../fonts/Blinker-Light.woff2') format('woff2'),
+}
+
+@font-face{
+  font-family: 'Blinker-ExtraLight-200';
+  src: url('../fonts/Blinker-ExtraLight.woff2') format('woff2'),
+}
+
+@font-face{
+  font-family: 'Blinker-Thin-100';
+  src: url('../fonts/Blinker-Thin.woff2') format('woff2'),
+}
+
+.headings-300 {
+  font-family: 'Blinker-Light-300', sans-serif;
+  font-size: clamp(2.75rem, 4rem + -3.333vw, 1rem);
+  color: #fff;
+  line-height: 40px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+}
+
+.sub-heading-p {
+  font-family: 'Blinker-Light-300', sans-serif;
+  font-size: clamp(0.75rem, 0.505rem + 0.87vw, 1.125rem);
+  letter-spacing: 0px;
+  line-height: 20px;
+  color: #fff;
+  
+}
+
+.logo-type {
+  position: relative;
+  font-family: 'Blinker-SemiBold-600', sans-serif;
+  font-size: clamp(1.375rem, 0.967rem + 1.449vw, 2rem);
+  letter-spacing: -1px;
+  line-height: 0px;
+  color: #fff;
+  
+}
+
+.logo-type-sub-type {
+  font-family: 'Blinker-Light-300', sans-serif;
+  font-size: clamp(0.75rem, 0.505rem + 0.87vw, 1.125rem);
+  letter-spacing: 0px;
+  line-height: 20px;
+  color: #fff;
+  
+}
+
+.navlinks-type {
+  font-family: 'Blinker-Light-300', sans-serif;
+  font-size: clamp(0.75rem, 0.505rem + 0.87vw, 1.125rem);
+  letter-spacing: 0px;
+  line-height: 20px;
+  color: #fff;
+  
+}
+
+/* .sub-heading-p3 {
+  font-family: 'Blinker-Light-300', sans-serif;
+  font-size: clamp(0.75rem, 0.586rem + 0.658vw, 1.375rem);
+  color: #ececec;
+} */
+
+
+/* Custom CSS */
 body::before {
   display: block;
   content: '';
   height: 0px;
 }
   
-  #map {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
-  
-  @media (min-width: 768px) {
-    .news-input {
-      width: 100%;
-    }
-  }
 
-  .bg-image {
-    background-image: url("/images/nilo_about_bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
+/* .navbar {
+  flex-wrap: nowrap;
+} */
 
-  }
+
+.bg-image {
+  background-image: url("../images/nilo_about_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
 
   .bg-footer {
     background-color: rgba(41,41,41,0.44);
@@ -35,9 +128,8 @@ body::before {
     width: 100%;
     height: 100vh; /* Adjust this to your desired height */
     overflow: hidden;
-    
-}
-  
+  }
+
 .hero-text {
     position: absolute;
     top: 50%;
@@ -46,6 +138,7 @@ body::before {
     text-align: left;
     color: #fff;
 }
+ 
 
 .bg-img-hero {
     background: url("../images/Johannesburg.webp") rgba(0, 0, 0, 0.5);
