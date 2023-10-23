@@ -1,10 +1,12 @@
 
 {% load static %}
-
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<link rel="stylesheet" type="text/css" href="{% static '/css/logo.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static '/css/nav.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static '/css/styles.css' %}">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
   
   <div class="container">
-      <a class="navbar-brand " href="{% url 'home' %}"><strong>home👋</strong></a>
+      <a class="navbar-brand" href="{% url 'home' %}"><span class="logo-type">Frontend</span> <br/><span class="logo-type-sub-type">SOFTWARE ENGINEERING</span></a>
       <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -15,10 +17,16 @@
             {% comment %} <a class="nav-link active" aria-current="page" href="{% url 'bookings' %}">Bookings</a> {% endcomment %}
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'home' %}#my_projects">My Projects</a>
+            <a class="nav-link navlinks-type navlinks-hover" href="{% url 'home' %}#my_projects">Our Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'home' %}#aboutme">About</a>
+            <a class="nav-link navlinks-type navlinks-hover" href="{% url 'home' %}#my_projects">Professional Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navlinks-type navlinks-hover" href="{% url 'home' %}#my_projects">Insights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navlinks-type navlinks-hover" href="{% url 'home' %}#aboutme">About</a>
           </li>
           <li class="nav-item">
             {% comment %} <a class="nav-link" href="{% url 'contact' %}">Contact</a> {% endcomment %}
