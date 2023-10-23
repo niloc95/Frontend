@@ -134,28 +134,20 @@ Note: An "app" can encompass a wide range of functionalities. For instance, on y
 python manage.py startapp myapp
 ```
 
-### Side note for Production git write access - git remote set-url origin https://PASTE_YOUR_GITHUB_TOKEN_HERE@github.com/niloc95/Frontend : this what it should look like:
+### Important Note for Production Git Write Access
 
-Missing or invalid credentials.
-Error: connect ECONNREFUSED /run/user/1000/vscode-git-c189e656bf.sock
-    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
-  errno: -111,
-  code: 'ECONNREFUSED',
-  syscall: 'connect',
-  address: '/run/user/1000/vscode-git-c189e656bf.sock'
-}
-Missing or invalid credentials.
-Error: connect ECONNREFUSED /run/user/1000/vscode-git-c189e656bf.sock
-    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
-  errno: -111,
-  code: 'ECONNREFUSED',
-  syscall: 'connect',
-  address: '/run/user/1000/vscode-git-c189e656bf.sock'
-}
-remote: No anonymous write access.
-fatal: Authentication failed for 'https://github.com/niloc95/Frontend.git/'
+If you encounter authentication issues when trying to push or pull from your GitHub repository, you may need to set the correct remote URL using a personal access token. This is how it should look:
 
 ```sh 
 # git remote set-url origin https://PASTE_YOUR_GITHUB_TOKEN_HERE@github.com/niloc95/Frontend
 git remote set-url origin https://ghp_XXXXB5Q3q50ISZ25cBgX5F9XVBGBTTYTYERER@github.com/niloc95/Frontend
 ```
+Replace YOUR_GITHUB_TOKEN with your actual GitHub personal access token. This token should have the necessary permissions to read and write to the repository. You can create a personal access token in your GitHub account settings following these steps:
+
+* 1. Go to your GitHub account settings.
+* 2.Select "Developer settings" from the left-hand menu.
+* 3.Click on "Personal access tokens."
+* 4.Generate a new token with the required permissions.
+* 5.Copy the token and use it in the git remote set-url command as shown above.
+* 6.Make sure to keep your personal access token secure and do not share it in your public repository or with unauthorized individuals.
+

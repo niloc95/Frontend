@@ -2,6 +2,9 @@
 chromedriver.app
 chromedriver
 images/
+asgi.py
+wsgi.py
+manage.py
 
 Byte-compiled / optimized / DLL files
 __pycache__/
