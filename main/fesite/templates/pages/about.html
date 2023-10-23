@@ -3,15 +3,15 @@
 {% block content %}
 
 {% comment %} <!-- Hero Section --> {% endcomment %}
-<section id="hero-section" class="hero-nilo">
+<section id="hero-section" class="hero-nilo bg-img-hero">
   
-  <video autoplay loop muted playsinline><source src="{% static 'images/Landing_page.mp4' %}"></video>
+  {% comment %} <video autoplay loop muted playsinline><source src="{% static 'images/Landing_page.mp4' %}"></video> {% endcomment %}
   <div class="container hero-text">
-    <p class="sub-heading-p">TECHNOLOGY RETHINKED</p>
-    {% comment %} <p><h2 class="sub-heading-p">Frontend provides all the tools to make your computer science journey easier. Get the best of cloud hosting, data management, networking, hardware, system support and Microsoft 365 – all in one place!</h2></p> {% endcomment %}
-    <p class='headings-300'>Ensure that your technology plans are in sync with your strategic objectives</p>
+    <h1 >Hi, I’m<span class="text-warning"> <strong>Nilo Cara</strong> 👋</span></h1>
+    <p class="display-5">a software engineer from South Africa</p>
+    
     {% comment %} <a href="{% url 'send_email' %}"> {% endcomment %}
-      {% comment %} <button class="btn btn-outline-light btn-lg">Contact me</button> {% endcomment %}
+      <button class="btn btn-outline-light btn-lg">Contact me</button>
     </a>
   </div>
 </section>
@@ -21,18 +21,9 @@
 <section id="aboutme">
   <div class="container">
     <div class="d-md-flex align-items-center pt-5 pt-md-5">
-      <div class="owl-carousel">
-        {% for item in items %}
-        <div class="item">
-            <img src="{% static 'images/404x531.webp'%}" alt="{{ item.title }}">
-            <h3>{{ item.title }}</h3>
-            <p>{{ item.description }}</p>
-        </div>
-        {% endfor %}
-    </div>
       <div>
         <h2>Me</h2>
-        <p class="fes-font">Throughout my journey, I've consistently pursued meaningful opportunities and embraced diverse challenges. From owning a small business and being recognized as Employee of the Year at Gijima to earning a Service Excellence merit at SouthernSun and achieving the top rank out of 115 students at Stellenbosch University's Software Engineering Bootcamp, my dedication to helping others and solving problems has remained unwavering.</p>
+        <p class="lead">Throughout my journey, I've consistently pursued meaningful opportunities and embraced diverse challenges. From owning a small business and being recognized as Employee of the Year at Gijima to earning a Service Excellence merit at SouthernSun and achieving the top rank out of 115 students at Stellenbosch University's Software Engineering Bootcamp, my dedication to helping others and solving problems has remained unwavering.</p>
         <p class="lead">Being a web developer, I find immense satisfaction in harnessing my meticulous attention to detail, unwavering passion for creation, and a resolute commitment to my mission to actively contribute to global transformation. This is precisely why I am eagerly looking forward to making a substantial mark within a rapidly expanding organization.</p>
       </div>
       <img class="img-fluid" src="{% static 'images/404x531.webp'%}"  alt="" />
@@ -57,7 +48,7 @@
               data-bs-toggle="collapse"
               data-bs-target="#question-one"
             >
-            <span class="lead">Software Engineering</span>
+            <span class="lead">IT Project Manager / Frontend Developer - Freelance Consultant</span>
             </button>
           </h2>
           <div
@@ -66,7 +57,14 @@
             data-bs-parent="#questions"
           >
             <div class="accordion-body lead">
-                <strong>A</strong> For our Accelerated and Part Time Program, we offer a flexible payment installment plan that does not require credit approval or interest. We require a deposit and will automatically deduct monthly payments each month until you are paid in full. The payment plan does include a R5000.00 maintenance fee. Us today to get started setting up your flexible payment plan.
+                <strong>A</strong> Freelance consulting is a role that thrives on strong autonomy, requiring motivation and initiative to create opportunities not only for myself but also to think outside the box for the benefit of our clients, and to recognize the value in doing so.
+                <ul class="list-group">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">A fourth item</li>
+                    <li class="list-group-item">And a fifth one</li>
+                  </ul>
             </div>
               <img src="{% static 'images/Fe-logo-black.png'%}" class="img-fluid" alt="" />
           </div>
