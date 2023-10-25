@@ -45,14 +45,20 @@
   src: url('../fonts/Blinker-Thin.woff2') format('woff2'),
 }
 
-.headings-300 {
-  font-family: 'Blinker-Light-300', sans-serif;
-  font-size: clamp(2.75rem, 4rem + -3.333vw, 1rem);
+.headings-h1 {
+  font-family: 'Blinker-Regular-400', sans-serif;
+  font-size: clamp(1.5rem, -0.258rem + 5.625vw, 3.75rem);
   color: #fff;
-  line-height: 40px;
+  line-height: 60px;
   vertical-align: baseline;
   letter-spacing: normal;
   word-spacing: 0px;
+}
+
+@media (max-width: 768px) {
+  .headings-h1 {
+    line-height: 30px; /* Change this to your desired mobile border width */
+  }
 }
 
 .sub-heading-p {
@@ -64,21 +70,31 @@
   
 }
 
+.sub-heading-p2 {
+  font-family: 'Blinker-Light-300', sans-serif;
+  font-size: clamp(1rem, 0.609rem + 1.25vw, 1.5rem);
+  letter-spacing: 0px;
+  line-height: 20px;
+  color: #000;
+  
+}
+
 .logo-type {
   position: relative;
+  text-transform: capitalize;
+  
   font-family: 'Blinker-SemiBold-600', sans-serif;
   font-size: clamp(1.375rem, 0.967rem + 1.449vw, 2rem);
   letter-spacing: -1px;
   line-height: 0px;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   
 }
 
 .logo-type-sub-type {
   font-family: 'Blinker-Light-300', sans-serif;
-  font-size: clamp(0.75rem, 0.505rem + 0.87vw, 1.125rem);
+  font-size: clamp(0.75rem, 0.668rem + 0.29vw, 0.875rem);
   letter-spacing: 0px;
-  line-height: 20px;
   color: #fff;
   
 }
@@ -86,10 +102,14 @@
 .navlinks-type {
   font-family: 'Blinker-Light-300', sans-serif;
   font-size: clamp(0.75rem, 0.505rem + 0.87vw, 1.125rem);
-  letter-spacing: 0px;
-  line-height: 20px;
   color: #fff;
-  
+}
+
+.icon-fav {
+  font-family: 'Blinker-Light-300', sans-serif;
+  font-size: clamp(0.75rem, 0.668rem + 0.29vw, 0.875rem);
+  color: #ffe600;
+  letter-spacing: -1px;
 }
 
 /* .sub-heading-p3 {
@@ -106,12 +126,54 @@ body::before {
   height: 0px;
 }
   
-
+.section-padding {
+  padding-top: 100px;
+}
 /* .navbar {
   flex-wrap: nowrap;
 } */
 
+.br { 
+  display: block; 
+  margin-top: 0em; 
+} 
 
+.frame-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  border: 50px solid #fff;
+  padding: 20px;
+  background-image: url("../images/Johannesburg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+@media (max-width: 768px) {
+  .frame-section {
+    border-width: 15px; /* Change this to your desired mobile border width */
+  }
+}
+
+.frame-section-text {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  border: 50px solid #fff;
+  padding: 20px;
+  color: #000;
+  
+  
+}
+
+@media (max-width: 768px) {
+  .frame-section-text {
+    padding: 0px;
+    height: 60vh;
+    border-width: 15px; /* Change this to your desired mobile border width */
+  }
+}
 .bg-image {
   background-image: url("../images/nilo_about_bg.jpg");
   background-size: cover;
