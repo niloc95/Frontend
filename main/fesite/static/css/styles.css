@@ -55,6 +55,17 @@
   word-spacing: 0px;
 }
 
+.headings-h2 {
+  font-family: 'Blinker-Regular-400', sans-serif;
+  font-size: clamp(1rem, 0.674rem + 1.159vw, 1.5rem);
+  color: #fff;
+  line-height: 30px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+}
+
+
 @media (max-width: 768px) {
   .headings-h1 {
     line-height: 30px; /* Change this to your desired mobile border width */
@@ -99,18 +110,70 @@
   
 }
 
+.test-border{
+  border: 5px solid #000;
+}
+
 .navlinks-type {
   font-family: 'Blinker-Light-300', sans-serif;
-  font-size: clamp(0.75rem, 0.505rem + 0.87vw, 1.125rem);
+  font-size: clamp(1rem, 0.918rem + 0.29vw, 1.125rem);
   color: #fff;
 }
 
 .icon-fav {
   font-family: 'Blinker-Light-300', sans-serif;
   font-size: clamp(0.75rem, 0.668rem + 0.29vw, 0.875rem);
-  color: #ffe600;
+  color: #FFC436;
   letter-spacing: -1px;
 }
+
+.paragragh-text {
+  font-family: 'Blinker-Light-300', sans-serif;
+  font-size: clamp(1rem, 0.918rem + 0.29vw, 1.125rem);
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  color: #262626;
+  
+}
+
+.my-yellow{
+  color: #FFC436;
+}
+
+.my-grey{
+  color: #363636;
+}
+
+.bi-icon{
+  padding: 0px 15px 0px 0px;
+  color: #FFC436;
+}
+
+.bi-icon-burnt_orange{
+  padding: 0px 15px 0px 0px;
+  color: #E25E3E;
+}
+
+.bi-icon-purple{
+  padding: 0px 15px 0px 0px;
+  color: #793FDF;
+}
+
+.bi-icon-green{
+  padding: 0px 15px 0px 0px;
+  color: #12486B;
+}
+
+.bi-icon-lite-green{
+  padding: 0px 15px 0px 0px;
+  color: #419197;
+}
+
+.bi-icon-dark-navy{
+  padding: 0px 15px 0px 0px;
+  color: #071952;
+}
+
 
 /* .sub-heading-p3 {
   font-family: 'Blinker-Light-300', sans-serif;
@@ -129,6 +192,42 @@ body::before {
 .section-padding {
   padding-top: 100px;
 }
+
+.section-padding-top {
+  padding-bottom: 25px;
+}
+
+.btn{
+  border-radius: 0px;
+  font-family: 'Blinker-Light-300', sans-serif;
+  font-size: clamp(1rem, 0.918rem + 0.29vw, 1.125rem);
+  letter-spacing: 0.5px;
+  line-height: 30px;
+}
+
+.btn:hover{
+  border-radius: 0px;
+  font-family: 'Blinker-Light-300', sans-serif;
+  font-size: clamp(1rem, 0.918rem + 0.29vw, 1.125rem);
+  letter-spacing: 0.5px;
+  line-height: 30px;
+
+}
+
+@media (max-width: 768px) {
+  /* Set the button's width to 100% on screens with a max width of 768px (adjust this breakpoint as needed) */
+  .btn-full-width {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Set the button's width to 100% on screens with a max width of 768px (adjust this breakpoint as needed) */
+  .btn-full-width {
+    width: 100%;
+  }
+}
+
 /* .navbar {
   flex-wrap: nowrap;
 } */
@@ -174,6 +273,56 @@ body::before {
     border-width: 15px; /* Change this to your desired mobile border width */
   }
 }
+
+.frame-section-about {
+  display: flex; /* Use flexbox to align content vertically */
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  position: relative;
+  width: 100%;
+  border: 50px solid #fff;
+  padding: 20px;
+  padding-bottom: 0px;
+  background-color: #f8f8f8;
+}
+
+@media (max-width: 768px) {
+  .frame-section-about {
+    padding-top: 15px;
+    padding-bottom: 0px;
+    border-width: 15px; /* Change this to your desired mobile border width */
+  }
+}
+
+.frame-section-acc {
+  display: flex; /* Use flexbox to align content vertically */
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  position: relative;
+  top: 0;
+  width: 100%;
+  border-top: 0px solid #fff;
+  border-bottom: 50px solid #fff;
+  border-left: 50px solid #fff;
+  border-right: 50px solid #fff;
+  padding: 20px;
+  background-color: #f8f8f8;
+  
+}
+
+@media (max-width: 768px) {
+  .frame-section-acc {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+    border-width: 15px; /* Change this to your desired mobile border width */
+  }
+}
+
+.list-group-item{
+  border: 0px;
+}
+
 .bg-image {
   background-image: url("../images/nilo_about_bg.jpg");
   background-size: cover;
@@ -190,6 +339,7 @@ body::before {
     width: 100%;
     height: 100vh; /* Adjust this to your desired height */
     overflow: hidden;
+    
   }
 
 .hero-text {
@@ -199,8 +349,26 @@ body::before {
     transform: translate(-50%, -50%);
     text-align: left;
     color: #fff;
+    margin-left: 70px;   
 }
- 
+
+@media (max-width: 768px) {
+  .hero-text {
+    margin-left: 30px;
+  }
+}
+
+.heading-padding {
+  margin-left: 70px;
+  margin-right: 70px; 
+}
+
+@media (max-width: 768px) {
+.heading-padding {
+  margin-left: 30px;
+  margin-right: 30px; /* Change this to your desired mobile border width */
+}
+}
 
 .bg-img-hero {
     background: url("../images/Johannesburg.webp") rgba(0, 0, 0, 0.5);
@@ -228,4 +396,12 @@ body::before {
       opacity: 1;
       transform: translateY(0);
   }
+}
+
+.bottom-right-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  margin: 20px; /* Adjust this value to control the distance from the corner */
 }

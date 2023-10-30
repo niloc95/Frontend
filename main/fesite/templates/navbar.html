@@ -1,10 +1,10 @@
 
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static '/css/logo.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static '/css/nav.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static '/css/styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static '/css/logo.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static '/css/nav.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static '/css/styles.css' %}"/>
 <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-  <div class="container-fluid px-lg-5">
+  <div class="container-fluid heading-padding">
       <a class="navbar-brand" href="{% url 'home' %}"><span class="logo-type">frontend </span><span class="icon-fav">Fe.<span><span class="logo-type-sub-type br"> Software Engineering</span></a>
       <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,7 +25,7 @@
             <a class="nav-link navlinks-type navlinks-hover" href="{% url 'home' %}#my_projects">Insights</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navlinks-type navlinks-hover" href="{% url 'home' %}#aboutme">About</a>
+            <a class="nav-link navlinks-type navlinks-hover" href="{% url 'about' %}">About</a>
           </li>
           <li class="nav-item">
             {% comment %} <a class="nav-link" href="{% url 'contact' %}">Contact</a> {% endcomment %}
