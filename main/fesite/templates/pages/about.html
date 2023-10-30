@@ -3,44 +3,51 @@
 {% block content %}
 
 {% comment %} <!-- Hero Section --> {% endcomment %}
-<section id="hero-section" class="hero-nilo bg-img-hero">
+<section id="hero-section" class=" hero-nilo bg-img-hero">
   
   {% comment %} <video autoplay loop muted playsinline><source src="{% static 'images/Landing_page.mp4' %}"></video> {% endcomment %}
-  <div class="container hero-text">
-    <h1 >Hi, I’m<span class="text-warning"> <strong>Nilo Cara</strong> 👋</span></h1>
-    <p class="display-5">a software engineer from South Africa</p>
+  <div class="container-fluid hero-text">
+    <h1 class="headings-h1">Hi, I’m<span class="my-yellow headings-h1"> <strong>Nilo Cara</strong> 👋</span></h1>
+    <p class="headings-h1">a software engineer from {<span class="my-yellow">JNB, ZA</span>}</p>
     
     {% comment %} <a href="{% url 'send_email' %}"> {% endcomment %}
       <button class="btn btn-outline-light btn-lg">Contact me</button>
     </a>
   </div>
+  <div class="bottom-right-text">
+    <p class="sub-heading-p">Engineered with Django and Bootstrap <a href="https://github.com/niloc95/Frontend" target="blank" alt="Nilo Cara - Software Engineer"><i class="bi bi-github"></i></a></p>
+  </div>
 </section>
 {% comment %}<!-- End Hero Section -->{% endcomment %}
 
 
-<section id="aboutme">
-  <div class="container">
-    <div class="d-md-flex align-items-center pt-5 pt-md-5">
+<section id="aboutme" class="frame-section-about">
+  <div class="container-fluid">
+    <div class="align-items-center justify-content-center d-md-flex">
       <div>
-        <h2>Me</h2>
-        <p class="lead">Throughout my journey, I've consistently pursued meaningful opportunities and embraced diverse challenges. From owning a small business and being recognized as Employee of the Year at Gijima to earning a Service Excellence merit at SouthernSun and achieving the top rank out of 115 students at Stellenbosch University's Software Engineering Bootcamp, my dedication to helping others and solving problems has remained unwavering.</p>
-        <p class="lead">Being a web developer, I find immense satisfaction in harnessing my meticulous attention to detail, unwavering passion for creation, and a resolute commitment to my mission to actively contribute to global transformation. This is precisely why I am eagerly looking forward to making a substantial mark within a rapidly expanding organization.</p>
+        <h2 class="headings-h1" style="color: black;">Me</h2>
+        {% comment %} <div>
+          <p class="paragragh-text"><strong>Current Focus:</strong> Python || Django || Frontend Engineering || Frontend Libraries</p>
+        </div> {% endcomment %}
+        <p class="paragragh-text">Throughout my journey, I've consistently pursued meaningful opportunities and embraced diverse challenges. From owning a small business and being recognized as Employee of the Year at Gijima to earning a Service Excellence merit at SouthernSun and achieving the top rank out of 115 students at Stellenbosch University's Software Engineering Bootcamp, my dedication to helping others and solving problems has remained unwavering.</p>
+        <p class="paragragh-text">Being a web developer, I find immense satisfaction in harnessing my meticulous attention to detail, unwavering passion for creation, and a resolute commitment to my mission to actively contribute to global transformation. This is precisely why I am eagerly looking forward to making a substantial mark within a rapidly expanding organization.</p>
+        <div>
+          <p class="paragragh-text"><strong>Current Focus:</strong> Python || Django || Frontend Engineering || Frontend Libraries</p>
+        </div>
       </div>
-      <img class="img-fluid" src="{% static 'images/404x531.webp'%}"  alt="" />
+      <img class="img-fluid pb-5" src="{% static 'images/400x400_NO_BG.png'%}"  alt="" />
     </div>
-    <div>
-      <p class"lead"><strong>Current Focus:</strong> Python || Django || Wagtail || React</p>
-    </div>
+    
   </div>
 </section>
 
 {% comment %} <!-- Start FAQ Section Accordion --> {% endcomment %}
-<section id="my_projects" class="pt-5">
-    <div class="container">
-      <h2 class="text-dark">Experience</h2>
+<section id="my_projects"  class="frame-section-acc">
+    <div class="container-fluid">
+      <h2 class="headings-h1 section-padding-top" style="color: black;">Career</h2>
       <div class="accordion accordion-flush">
         <!-- Item 1 -->
-        <div class="accordion-item border-0 ">
+        <div class="accordion-item">
           <h2 class="accordion-header">
             <button
               class="accordion-button collapsed "
@@ -48,25 +55,82 @@
               data-bs-toggle="collapse"
               data-bs-target="#question-one"
             >
-            <span class="lead">IT Project Manager / Frontend Developer - Freelance Consultant</span>
+            <span class="headings-h2" style="color: black;"><i class="bi bi-person-workspace bi-icon my-yellow"></i> Work Experience</span>
             </button>
           </h2>
-          <div
-            id="question-one"
-            class="accordion-collapse collapse"
-            data-bs-parent="#questions"
-          >
-            <div class="accordion-body lead">
-                <strong>A</strong> Freelance consulting is a role that thrives on strong autonomy, requiring motivation and initiative to create opportunities not only for myself but also to think outside the box for the benefit of our clients, and to recognize the value in doing so.
-                <ul class="list-group">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                    <li class="list-group-item">A fourth item</li>
-                    <li class="list-group-item">And a fifth one</li>
-                  </ul>
-            </div>
-              <img src="{% static 'images/Fe-logo-black.png'%}" class="img-fluid" alt="" />
+          <div id="question-one" class="accordion-collapse collapse"  data-bs-parent="#questions">
+             <div class="accordion-body accordion-flush">
+              <div class="container-fluid">
+                <h2 class="headings-h2" style="color: black;">Freelance Consultant - Frontend developer<span><strong class="br paragragh-text my-grey">Feb 2019 – Present</strong></span></h2>
+                <div class="row">
+                  <div class="col-md-4">
+                    <p class="paragragh-text">As a freelance consultant, I leverage my background from my prior role, thriving on strong autonomy. I require motivation and initiative to create
+                      opportunities, not only for myself but also to think outside the box for the benefit of my clients, and to recognize the value in doing so.</p>
+                    <p
+                      class="paragragh-text"><button class="btn btn-outline-dark btn-lg btn-full-width" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                        Frontends and Websites
+                      </button>
+                    </p>
+                    
+                  </div>
+                  <div class="col-md-8">
+                    <!-- Right Column Content -->
+                    
+                    <div>
+                      <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                        <div class="card card-body" style="border: none;">
+                          <ul class="list-group paragragh-text">
+                            <li class="list-group-item">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-md-2 d-flex">
+                                    <a href="https://growthpoint.co.za" target="blank"><img class="img-fluid" src="{% static 'images/logo/Growthpoint-Logo.png'%}" alt="Growthpoint Properties"/></a>
+                                  </div>
+                                  <div class="col-md-10 d-flex align-items-center">
+                                    <p> <span class="headings-h2" style="color: black;">Growthpoint Properties</span><span class="br paragraph-text">Growthpoint Properties is a leading property company with assets in South Africa, Eastern Europe, Australia and the UK</span></p>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item"><div class="container">
+                              <div class="row">
+                                <div class="col-md-2 d-flex">
+                                  <a href="https://saltylemonkites.com/" target="blank"><img class="img-fluid" src="{% static 'images/logo/Salty-Lemon-Logo_black.webp'%}" alt="Growthpoint Properties"/></a>
+                                </div>
+                                <div class="col-md-10 d-flex align-items-center">
+                                  <p> <span class="headings-h2" style="color: black;">Salty Lemon </span><span class="br paragraph-text">A German company that offers a subscription model for sports equipment with full flexibility and security with our integrated insurance.</span></p>                                
+                                </div>
+                              </li>
+                            <li class="list-group-item"><div class="row">
+                              <div class="col-md-2 d-flex">
+                                <a href="https://www.levistrauss.com/" target="blank"><img class="img-fluid" src="{% static 'images/logo/Levi-Strauss-dark-Logo.png'%}" alt="Growthpoint Properties"/></a>
+                              </div>
+                              <div class="col-md-10 d-flex align-items-center">
+                                <p> <span class="headings-h2" style="color: black;">Levi Strauss & Co.</span><span class="br paragraph-text">Today we are one of the world's largest brand-name apparel companies and a global leader in jeanswear.</span></p>                                
+                              </div></li>
+                            <li class="list-group-item"><div class="row">
+                              <div class="col-md-2 d-flex">
+                                <a href="https://growthpoint.co.za" target="blank"><img class="img-fluid" src="{% static 'images/logo/Bettaway.png'%}" alt="Growthpoint Properties"/></a>
+                              </div>
+                              <div class="col-md-10 d-flex align-items-center">
+                                <p> <span class="headings-h2" style="color: black;">Bettaway </span><span class="br paragraph-text"> Bettaway is differentiated from other brands on the market by offering a range of “one a day” multivitamins in time-release format.</span></p>                                
+                              </div></li>
+                            <li class="list-group-item"><div class="row">
+                              <div class="col-md-2 d-flex">
+                                <a href="https://growthpoint.co.za" target="blank"><img class="img-fluid" src="{% static 'images/logo/Vitaforce-Logo_nobg_500px.png'%}" alt="Growthpoint Properties"/></a>
+                              </div>
+                              <div class="col-md-10 d-flex align-items-center">
+                                <p> <span class="headings-h2" style="color: black;">Salty Lemon </span><span class="br paragraph-text">A German company that offers a subscription model for sports equipment with full flexibility and security with our integrated insurance.</span></p>                                
+                              </div></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
           </div>
         </div>
         <!-- Item 2 -->
@@ -78,7 +142,7 @@
               data-bs-toggle="collapse"
               data-bs-target="#question-two"
             >
-            <span class="lead">Web Development</span>
+            <span class="headings-h2" style="color: black;"><i class="bi bi-bar-chart-steps bi-icon-burnt_orange"></i> Projects</span>
             </button>
           </h2>
           <div
@@ -101,7 +165,7 @@
               data-bs-toggle="collapse"
               data-bs-target="#question-three"
             >
-              <span class="lead">Project Management</span>
+            <span class="headings-h2" style="color: black;"><i class="bi bi-code bi-icon-purple"></i> Software Engineering</span>
             </button>
           </h2>
           <div
@@ -131,7 +195,7 @@
               data-bs-toggle="collapse"
               data-bs-target="#question-four"
             >
-              <span class="lead">Bettaway - August 2021 // Bryanston, South Africa</span>
+            <span class="headings-h2" style="color: black;"><i class="bi bi-filetype-html bi-icon-green"></i> Web Development</span>
             </button>
           </h2>
           <div
@@ -161,7 +225,7 @@
               data-bs-toggle="collapse"
               data-bs-target="#question-five"
             >
-              <span class="lead">VitaForce - September 2021 // Bryanston, South Africa</span>
+            <span class="headings-h2" style="color: black;"><i class="bi bi-list-stars bi-icon-lite-green"></i> Skills</span>
             </button>
           </h2>
           <div
@@ -191,7 +255,7 @@
               data-bs-toggle="collapse"
               data-bs-target="#question-six"
             >
-              <span class="lead">Studio Merkmann - May 2022 // Johannesburg, South Africa</span>
+            <span class="headings-h2" style="color: black;"><i class="bi bi-bookmark-fill bi-icon-dark-navy"></i> Education</span>
             </button>
           </h2>
           <div
@@ -213,181 +277,25 @@
         {% comment %}<!-- End Item-->{% endcomment %}
 
         {% comment %}<!-- Item 7 -->{% endcomment %}
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#question-seven"
-            >
-              <span class="lead">StanLib - April 2020 // Melrose Arch, South Africa</span>
-            </button>
-          </h2>
-          <div
-            id="question-seven"
-            class="accordion-collapse collapse"
-            data-bs-parent="#questions"
-          >
-            <div class="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              beatae fuga animi distinctio perspiciatis adipisci velit maiores
-              totam tempora accusamus modi explicabo accusantium consequatur,
-              praesentium rem quisquam molestias at quos vero. Officiis ad
-              velit doloremque at. Dignissimos praesentium necessitatibus
-              natus corrupti cum consequatur aliquam! Minima molestias iure
-              quam distinctio velit.
-            </div>
-          </div>
-        </div>
+        
         {% comment %}<!-- End Item-->{% endcomment %}
 
         {% comment %}<!-- Item 8 -->{% endcomment %}
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#question-eight"
-            >
-              <span class="lead">Chavda International - April 2020 // Sandton, South Africa</span>
-            </button>
-          </h2>
-          <div
-            id="question-eight"
-            class="accordion-collapse collapse"
-            data-bs-parent="#questions"
-          >
-            <div class="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              beatae fuga animi distinctio perspiciatis adipisci velit maiores
-              totam tempora accusamus modi explicabo accusantium consequatur,
-              praesentium rem quisquam molestias at quos vero. Officiis ad
-              velit doloremque at. Dignissimos praesentium necessitatibus
-              natus corrupti cum consequatur aliquam! Minima molestias iure
-              quam distinctio velit.
-            </div>
-          </div>
-        </div>
+        
         {% comment %}<!-- End Item-->{% endcomment %}
 
         {% comment %}<!-- Item 9 -->{% endcomment %}
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#question-nine"
-            >
-              <span class="lead">Suitable Inspired Living - April 2017 // Sandton, South Africa</span>
-            </button>
-          </h2>
-          <div
-            id="question-nine"
-            class="accordion-collapse collapse"
-            data-bs-parent="#questions"
-          >
-            <div class="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              beatae fuga animi distinctio perspiciatis adipisci velit maiores
-              totam tempora accusamus modi explicabo accusantium consequatur,
-              praesentium rem quisquam molestias at quos vero. Officiis ad
-              velit doloremque at. Dignissimos praesentium necessitatibus
-              natus corrupti cum consequatur aliquam! Minima molestias iure
-              quam distinctio velit.
-            </div>
-          </div>
-        </div>
+        
         {% comment %}<!-- End Item-->{% endcomment %}
 
         {% comment %}<!-- Item 10 -->{% endcomment %}
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#question-ten"
-            >
-              <span class="lead">about.frontend.co.za - April 2021 // Johannesburg, South Africa</span>
-            </button>
-          </h2>
-          <div
-            id="question-ten"
-            class="accordion-collapse collapse"
-            data-bs-parent="#questions"
-          >
-            <div class="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              beatae fuga animi distinctio perspiciatis adipisci velit maiores
-              totam tempora accusamus modi explicabo accusantium consequatur,
-              praesentium rem quisquam molestias at quos vero. Officiis ad
-              velit doloremque at. Dignissimos praesentium necessitatibus
-              natus corrupti cum consequatur aliquam! Minima molestias iure
-              quam distinctio velit.
-            </div>
-          </div>
-        </div>
+        
         {% comment %}<!-- End Item-->{% endcomment %}
 
         <!-- Item 11 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#question-eleven"
-            >
-              <span class="lead">WebScheduler - November 2019 // Johannesburg, South Africa</span>
-            </button>
-          </h2>
-          <div
-            id="question-eleven"
-            class="accordion-collapse collapse"
-            data-bs-parent="#questions"
-          >
-            <div class="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              beatae fuga animi distinctio perspiciatis adipisci velit maiores
-              totam tempora accusamus modi explicabo accusantium consequatur,
-              praesentium rem quisquam molestias at quos vero. Officiis ad
-              velit doloremque at. Dignissimos praesentium necessitatibus
-              natus corrupti cum consequatur aliquam! Minima molestias iure
-              quam distinctio velit.
-            </div>
-          </div>
-        </div>
+        
         <!-- Item 12 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#question-twelve"
-            >
-              <span class="lead">Washington County - March 2020 // Maryland, USA</span>
-            </button>
-          </h2>
-          <div
-            id="question-twelve"
-            class="accordion-collapse collapse"
-            data-bs-parent="#questions"
-          >
-            <div class="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              beatae fuga animi distinctio perspiciatis adipisci velit maiores
-              totam tempora accusamus modi explicabo accusantium consequatur,
-              praesentium rem quisquam molestias at quos vero. Officiis ad
-              velit doloremque at. Dignissimos praesentium necessitatibus
-              natus corrupti cum consequatur aliquam! Minima molestias iure
-              quam distinctio velit.
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
   </section>
@@ -406,8 +314,8 @@
 </section> 
 <!-- End Call to action Section -->{% endcomment %}
 
-{% comment %}<!-- Boxes -->
- <section class="p-5">
+<!-- Boxes -->
+ {% comment %} <section class="p-5">
     <div class="container">
         <div class="row text-center">
             <div class="col-md">
@@ -456,8 +364,8 @@
 
         </div>
     </div>
-</section> 
-<!-- End Boxes -->{% endcomment %}
+</section>  {% endcomment %}
+<!-- End Boxes -->
 
 {% comment %} <!-- Learn More Section --> {% endcomment %}
 <section id="learn-1" class="py-5">
