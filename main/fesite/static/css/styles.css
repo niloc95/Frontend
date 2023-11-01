@@ -163,6 +163,11 @@ a:link {
   color: #FFC436;
 }
 
+.bi-icon-career{
+  padding: 0px 0px 0px 0px;
+  color: #FFC436;
+}
+
 .bi-icon-burnt_orange{
   padding: 0px 15px 0px 0px;
   color: #E25E3E;
@@ -235,7 +240,7 @@ body::before {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   /* Set the button's width to 100% on screens with a max width of 768px (adjust this breakpoint as needed) */
   .btn-full-width {
     width: 100%;
