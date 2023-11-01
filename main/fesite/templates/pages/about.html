@@ -8,7 +8,7 @@
   {% comment %} <video autoplay loop muted playsinline><source src="{% static 'images/Landing_page.mp4' %}"></video> {% endcomment %}
   <div class="container-fluid hero-text">
     <h1 class="headings-h1">Hi, I’m<span class="my-yellow headings-h1"> <strong>Nilo Cara</strong> 👋</span></h1>
-    <p class="headings-h1">a software engineer from {<span class="my-yellow">JNB, ZA</span>}</p>
+    <p class="headings-h1">a software engineer from {<span><a class="my-yellow" href="https://maps.app.goo.gl/1hTYk8r9s7ugn9b47" target="blank" alt="Nilo Cara - Software Engineer">JNB, ZA</a></span>}</p>
     
     {% comment %} <a href="{% url 'send_email' %}"> {% endcomment %}
       <button class="btn btn-outline-light btn-lg">Contact me</button>
@@ -41,10 +41,10 @@
   </div>
 </section>
 
-{% comment %} <!-- Start FAQ Section Accordion --> {% endcomment %}
+{% comment %} <!-- Start Accordion Section--> {% endcomment %}
 <section id="my_projects"  class="frame-section-acc">
     <div class="container-fluid">
-      <h2 class="headings-h1 section-padding-top" style="color: black;">Career</h2>
+      <h2 id="career" class="headings-h1 section-padding-top" style="color: black;">Career</h2>
       <div class="accordion accordion-flush">
         <!-- Item 1 -->
         <div class="accordion-item">
@@ -75,7 +75,6 @@
                   </div>
                   <div class="col-md-8">
                     <!-- Right Column Content -->
-                    
                     <div>
                       <div class="collapse collapse-horizontal" id="collapseWidthExample">
                         <div class="card card-body" style="border: none;">
@@ -83,13 +82,35 @@
                             <li class="list-group-item">
                               <div class="container">
                                 <div class="row">
+                                  <div class="col-md-2 d-flex btn-full-width ">
+                                    <a href="https://hyperion.co.za" target="blank"><img class="img-fluid" src="{% static 'images/logo/hyperion.png'%}" alt="Growthpoint Properties"/></a>
+                                  </div>
+                                  <div class="col-md-10 d-flex align-items-center">
+                                    <p> 
+                                      <span class="br headings-h2" style="color: black;">HyperionDev - Post login Student Dashboard</span>
+                                      <span class="career-date">May 2023</span>
+                                      <span class="career-date">|| <a href="https://github.com/niloc95/Dashboard" target="blank"><i class="bi bi-github bi-icon">Project Repo</i></a></span>
+                                      <span class="career-date">|| <a href="https://tht.frontend.co.za" target="blank"><i class="bi bi-file bi-icon">Demo Site</i></a></span>
+                                      <span class="br paragraph-text">Create and development a Student Trial Dashboard</span>
+                                      <span class="br paragraph-text">Bootstrap5 || Webpack5 || CSS and HTML || Code Splitting || Lazy Loading for Production</span>
+                                    </p>
+                                   </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="container">
+                                <div class="row">
                                   <div class="col-md-2 d-flex">
                                     <a href="https://growthpoint.co.za" target="blank"><img class="img-fluid" src="{% static 'images/logo/Growthpoint-Logo.png'%}" alt="Growthpoint Properties"/></a>
                                   </div>
                                   <div class="col-md-10 d-flex align-items-center">
-                                    <p> <span class="headings-h2" style="color: black;">Growthpoint Properties</span><span class="br paragraph-text">Growthpoint Properties is a leading property company with assets in South Africa, Eastern Europe, Australia and the UK</span></p>
-                                    
-                                  </div>
+                                    <p> 
+                                      <span class="headings-h2" style="color: black;">Growthpoint Properties</span>
+                                      <span class="br career-date">April 2022</span>
+                                      <span class="br paragraph-text">Growthpoint Properties is a leading property company with assets in South Africa, Eastern Europe, Australia and the UK</span>
+                                    </p>
+                                   </div>
                                 </div>
                               </div>
                             </li>
@@ -122,7 +143,8 @@
                               </div>
                               <div class="col-md-10 d-flex align-items-center">
                                 <p> <span class="headings-h2" style="color: black;">Salty Lemon </span><span class="br paragraph-text">A German company that offers a subscription model for sports equipment with full flexibility and security with our integrated insurance.</span></p>                                
-                              </div></li>
+                              </div>
+                            </li>
                           </ul>
                         </div>
                       </div>
