@@ -124,6 +124,33 @@
   border: 5px solid #000;
 }
 
+.card-body {
+  border: 0px;
+}
+
+@media (max-width: 768px) {
+  /* Set the button's width to 100% on screens with a max width of 768px (adjust this breakpoint as needed) */
+  .card-body {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Set the button's width to 100% on screens with a max width of 768px (adjust this breakpoint as needed) */
+  .container-fluid {
+    padding: 0px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  /* Set the button's width to 100% on screens with a max width of 768px (adjust this breakpoint as needed) */
+  .list-group-item {
+    padding: 0px;
+    width: 100%;
+  }
+}
+
 .navlinks-type {
   font-family: 'Blinker-Light-300', sans-serif;
   font-size: clamp(1rem, 0.918rem + 0.29vw, 1.125rem);
@@ -165,7 +192,7 @@ a:link {
 
 .bi-icon-career{
   padding: 0px 0px 0px 0px;
-  color: #FFC436;
+  color: #E25E3E;
 }
 
 .bi-icon-burnt_orange{
