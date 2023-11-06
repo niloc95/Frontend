@@ -95,8 +95,14 @@
   font-size: clamp(0.75rem, 0.652rem + 0.313vw, 0.875rem);
   letter-spacing: 0px;
   line-height: 20px;
-  color: #000;
-  
+  color: #000; 
+}
+
+.showcase-tags{
+  color: var(--frontend-burnt-orange);
+  font-family: 'Blinker-Light-300', sans-serif;
+  font-size: clamp(1rem, 0.902rem + 0.313vw, 1.125rem); 
+  margin-left: 5px;
 }
 
 
@@ -135,13 +141,6 @@
   }
 }
 
-@media (max-width: 768px) {
-  /* Set the button's width to 100% on screens with a max width of 768px (adjust this breakpoint as needed) */
-  .container-fluid {
-    padding: 0px;
-  }
-}
-
 
 @media (max-width: 768px) {
   /* Set the button's width to 100% on screens with a max width of 768px (adjust this breakpoint as needed) */
@@ -175,49 +174,62 @@
 
 a:link {
   text-decoration: none;
+  color: none;
 }
 
+:root {
+  --frontend-yellow: #FFC436;   
+  --frontend-lite-grey: #bdbdbd;     
+  --frontend-dark-grey: #363636;     
+  --frontend-lite-green: #419197;
+  --frontend-purple: #793FDF;
+  --frontend-burnt-orange: #E25E3E;
+  --frontend-dark-navy: #071952;
+  --frontend-green: #12486B;
+  --frontend-white: #FFF;
+  
+}
 .my-yellow{
-  color: #FFC436;
+  color: var(--frontend-yellow);
 }
 
 .my-grey{
-  color: #363636;
+  color: var(--frontend-dark-grey);
 }
 
 .bi-icon{
   padding: 0px 15px 0px 0px;
-  color: #FFC436;
+  color: var(--frontend-yellow);
 }
 
 .bi-icon-career{
   padding: 0px 0px 0px 0px;
-  color: #E25E3E;
+  color: var(--frontend-burnt-orange);
 }
 
 .bi-icon-burnt_orange{
   padding: 0px 15px 0px 0px;
-  color: #E25E3E;
+  color: var(--frontend-burnt-orange);
 }
 
 .bi-icon-purple{
   padding: 0px 15px 0px 0px;
-  color: #793FDF;
+  color: var(--frontend-purple);
 }
 
 .bi-icon-green{
   padding: 0px 15px 0px 0px;
-  color: #12486B;
+  color: var(--frontend-green);
 }
 
 .bi-icon-lite-green{
   padding: 0px 15px 0px 0px;
-  color: #419197;
+  color: var(--frontend-lite-green);
 }
 
 .bi-icon-dark-navy{
   padding: 0px 15px 0px 0px;
-  color: #071952;
+  color: var(--frontend-dark-navy);
 }
 
 
@@ -282,6 +294,11 @@ body::before {
   display: block; 
   margin-top: 0em; 
 } 
+
+.br-para { 
+  display: block;
+  padding-top: 5px; 
+}
 
 .frame-section {
   position: relative;
@@ -360,8 +377,7 @@ body::before {
   .frame-section-acc {
     padding-top: 15px;
     padding-bottom: 15px;
-    
-    border-width: 15px; /* Change this to your desired mobile border width */
+    border-width: 5px; /* Change this to your desired mobile border width */
   }
 }
 

@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
+{% block title %}Nilo Cara - Software Engineer{% endblock %}
 {% load static %}
 {% block content %}
 {% include 'pages/seo_about.html'%}
+
 {% comment %} <!-- Hero Section --> {% endcomment %}
-<section id="hero-section" class=" hero-nilo bg-img-hero">
+<section id="hero-section" class="hero-nilo bg-img-hero">
   
   {% comment %} <video autoplay loop muted playsinline><source src="{% static 'images/Landing_page.mp4' %}"></video> {% endcomment %}
   <div class="container-fluid hero-text">
@@ -29,9 +31,7 @@
         {% comment %} <div>
           <p class="paragragh-text"><strong>Current Focus:</strong> Python || Django || Frontend Engineering || Frontend Libraries</p>
         </div> {% endcomment %}
-        <p class="paragragh-text">Throughout my journey, I've consistently pursued meaningful opportunities and embraced diverse challenges. From owning a small business and being recognized as Employee of the Year at Gijima to earning a Service Excellence merit at SouthernSun and achieving the top rank out of 115 students at Stellenbosch University's Software Engineering Bootcamp, my dedication to helping others and solving problems has remained unwavering.</p>
-        <p class="paragragh-text">With over 15 years of experience in the technology industry, I began as a junior support analyst at Standard Bank Group and progressed to become a Group Operations Manager. However, in November of 2017, I opted to take a hiatus from my professional career to undertake a personal project. Upon completing my personal project, I re-entered the market in 2019 as a freelance software developer.
-          My extensive experience and expertise with Python, Javascript, HTML, CSS, MySQL, AWS, and I am constantly exploring and learning new frameworks and languages. This has led me to be a well-rounded front-end developer utilizing JavaScript and various web development tools, with occasional forays into backend solutions using Node or Python. To further advance my career as a software engineer, I have recently joined Hyperion Dev with Stellenbosch University and Harvard University's CS50.</p>
+        <p class="paragragh-text">Throughout my diverse journey, I've consistently sought meaningful opportunities and embraced challenges. From owning a small business to being recognized as Employee of the Year at Gijima, earning a Service Excellence merit at SouthernSun, and achieving top rank at Stellenbosch University's Software Engineering Bootcamp, my dedication to problem-solving and helping others has remained unwavering. With over 15 years in the tech industry, I transitioned from a junior support analyst to a Group Operations Manager at Standard Bank Group before taking a hiatus in 2017 for a personal project. Returning in 2019 as a freelance software developer, I've honed expertise in Python, JavaScript, HTML, CSS, MySQL, AWS, and continue to explore new frameworks and languages. I excel as a well-rounded front-end developer using JavaScript and web development tools, occasionally delving into backend solutions with Node or Python, and have recently joined Hyperion Dev with Stellenbosch University and Harvard University's CS50 to further advance my career as a software engineer.</p>
         {% comment %} <p class="paragragh-text">Being a web developer, I find immense satisfaction in harnessing my meticulous attention to detail, unwavering passion for creation, and a resolute commitment to my mission to actively contribute to global transformation. This is precisely why I am eagerly looking forward to making a substantial mark within a rapidly expanding organization.</p> {% endcomment %}
         <div>
           <p class="paragragh-text"><strong>Current Focus:</strong> Python || Django || Frontend Engineering || Frontend Libraries</p>
@@ -39,14 +39,16 @@
       </div>
       <img class="img-fluid pb-5" src="{% static 'images/400x400_NO_BG.png'%}"  alt="" />
     </div>
-    
   </div>
+  {% comment %} <!-- Anchor point for Accordion section--> {% endcomment %}
+  <div id="career"></div>
+  {% comment %} <!-- End Anchor point for Accordion section--> {% endcomment %}
 </section>
 
 {% comment %} <!-- Start Accordion Section--> {% endcomment %}
 <section id="my_projects"  class="frame-section-acc">
     <div class="container-fluid">
-      <h2 id="career" class="headings-h1 section-padding-top" style="color: black;">Career</h2>
+      <h2 class="headings-h1 section-padding-top" style="color: black;">Career</h2>
       <div class="accordion accordion-flush">
         <!-- Item 1 -->
         <div class="accordion-item">
@@ -66,8 +68,7 @@
                 <h2 class="headings-h2" style="color: black;">Freelance Consultant - Frontend developer<span><strong class="br paragragh-text my-grey">Feb 2019 – Present</strong></span></h2>
                 <div class="row">
                   <div class="col-md-4">
-                    <p class="paragragh-text">As a freelance consultant, I leverage my background from my prior role, thriving on strong autonomy. I require motivation and initiative to create
-                      opportunities, not only for myself but also to think outside the box for the benefit of my clients, and to recognize the value in doing so.</p>
+                    <p class="paragragh-text">Returning in 2019 as a freelance software developer, I've honed expertise in Python, JavaScript, HTML, CSS, MySQL, AWS, and continue to explore new frameworks and languages.</p>
                     <p
                       class="paragragh-text"><button class="btn btn-outline-dark btn-lg btn-full-width" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
                         Frontends and Websites
@@ -82,7 +83,6 @@
                         <div class="card card-body">
                           <ul class="list-group paragragh-text">
                             <li class="list-group-item">
-                              <div class="container">
                                 <div class="row">
                                   <div class="d-flex col-md-2">
                                     <a href="https://hyperiondev.com" target="blank"><img class="img-fluid" src="{% static 'images/logo/hyperion.png'%}" alt="Growthpoint Properties"/></a>
@@ -91,50 +91,84 @@
                                     <p> 
                                       <span class="br headings-h2" style="color: black;">Post login Student Dashboard</span>
                                       <span class="br paragragh-text my-grey">Learn With South Africa's Largest Coding Training Institute - Johannesburg & Cape Town, ZA</span>
-                                      <span class="career-date br"><strong>Role: </strong>Lead Developer </span>
+                                      <span class="career-date br"><strong>Role: </strong>Front-End Developer </span>
                                       <span class="career-date br"><strong>Date: </strong> May 2023 </span>
-                                      <span class="career-date"><a href="https://github.com/niloc95/Dashboard" target="blank"><i class="bi bi-github bi-icon-career">Project Repo</i></a></span>
-                                      <span class="career-date"><a href="https://tht.frontend.co.za" target="blank"><i class="bi bi-file bi-icon-career">Demo Site</i></a></span>
                                       <span class="br paragraph-text">Create and development a Student Trial Dashboard</span>
-                                      <span class="br paragraph-text">Bootstrap5 || Webpack5 || CSS and HTML || Code Splitting || Lazy Loading for Production</span>
+                                      <span><a href="https://github.com/niloc95/Dashboard" target="blank"><img width="25" height="25" src="https://img.icons8.com/fluency/25/github.png" alt="github"/><span class="showcase-tags">Repo</span></a></span> ||
+                                      <span><a href="https://tht.frontend.co.za" target="blank"><img width="25" height="25" src="https://img.icons8.com/fluency/25/web.png" alt="web"/><span class="showcase-tags">Demo Site</span></a></span>
+                                      
+                                      <span class="br paragraph-text"> <img width="25" height="25" src="https://img.icons8.com/color/48/bootstrap--v2.png" alt="bootstrap--v2"/> || <img width="25" height="25" src="https://img.icons8.com/color/48/webpack.png" alt="webpack"/> || <img width="25" height="25" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/> || <img width="25" height="25" src="https://img.icons8.com/color/25/css3.png" alt="css3"/> || <img width="25" height="25" src="https://img.icons8.com/fluency/25/javascript.png" alt="javascript"/> || <img width="25" height="25" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" alt="external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo"/></span>
                                     </p>
                                   </div>
                                 </div>
-                              </div>
                             </li>
                             {% comment %} <!-- Item2 - Digitlab Marketing Agency Project Right Column Content --> {% endcomment %}
                             <li class="list-group-item">
-                              <div class="container">
                                 <div class="row">
                                   <div class="col-md-2 d-flex">
-                                    <a href="https://growthpoint.co.za" target="blank"><img class="img-fluid br" src="{% static 'images/logo/Digitlab_Marketing.png'%}" alt="Growthpoint Properties"/></a>
+                                    <a href="https://digitlab.co.za/" target="blank"><img class="img-fluid br" src="{% static 'images/logo/Digitlab_Marketing.png'%}" alt="Growthpoint Properties"/></a>
                                   </div>
                                   <div class="col-md-10 col-12 align-items-center">
                                     <p> 
                                       <span class="br headings-h2" style="color: black;">Website Development and Site Enhancements</span>
                                       <span class="br paragragh-text my-grey">A Full service digital media agency based in Durban, ZA</span>
-                                      <span class="career-date br"><strong>Role: </strong>Web Developer </span>
+                                      <span class="career-date"><strong>Role: </strong>Web Developer </span>
                                       <span class="career-date br"><strong>Date: </strong> April 2022 - 2023</span>
-                                      <span class="career-date"><a href="https://github.com/niloc95/Dashboard" target="blank"><i class="bi bi-github bi-icon-career">Project Repo</i></a></span>
-                                      <span class="career-date"><a href="https://tht.frontend.co.za" target="blank"><i class="bi bi-file bi-icon-career ">Demo Site</i></a></span>
-                                      <span class="br paragraph-text">Create and development a Student Trial Dashboard</span>
-                                      <span class="br paragraph-text">Bootstrap5 || Webpack5 || CSS and HTML || Code Splitting || Lazy Loading for Production</span>
+                                      <span class="career-date "><strong>Client:</strong> Growthpoint Properties </span>
+                                      <span class="career-date"><a href="https://growthpoint.co.za" target="blank"><img class="img-fluid br-para" width="200" height="" src="{% static 'images/logo/Growthpoint-Logo.png'%}" alt="Growthpoint Properties"/></a></span>
+                                      <span class="br paragraph-text">Site Enhancement: Develop a custom function for page selection "All, Industrial, Office, Trading & Development".</span>
+                                      <span><a href="https://growthpoint.co.za/parks-and-precincts/" target="blank" alt"Growthpoint Properties Site Development"><span class="showcase-tags">Production Site</span></a></span>
+                                      <span class="br paragraph-text"><img width="25" height="25" src="https://img.icons8.com/officel/25/php-logo.png" alt="php-logo"/> || <img width="25" height="25" src="https://img.icons8.com/fluency/25/javascript.png" alt="javascript"/> || <img width="25" height="25" src="https://img.icons8.com/fluency/48/wordpress.png" alt="wordpress"/> || <img width="25" height="25" src="https://img.icons8.com/fluency/25/html-5.png" alt="html-5"/> || <img width="100" src="{% static 'images/logo/cloudways.png'%}" alt="javascript"/></span>
+                                      
+                                    </p>
+                                    <p>
+                                      <span class="career-date"><a href="https://saltylemonkites.com/" target="blank"><img class="img-fluid br-para" width="200" height="" src="{% static 'images/logo/Salty-Lemon-Logo_black.webp'%}" alt="Salty Lemon Website Development"/></a></span>
+                                      <span class="br paragraph-text">Full website reconstruction using ElementorPro, accompanied by hosting migration to AWS Lightsail. The rebuilt site has been optimized for image size, resulting in an impressive 85% reduction, with images now using the "webp" format.</span>
+                                      <span class="career-date"><strong>Role: </strong>Web Developer </span>
+                                      <span class="career-date br"><strong>Date: </strong> April 2022 - 2023</span>
+                                      <span class="career-date "><strong>Client:</strong> Salty Lemon GmbH Germany </span>
+                                      <span class="br paragraph-text"><img width="25" height="25" src="https://img.icons8.com/officel/25/php-logo.png" alt="php-logo"/> || <img width="25" height="25" src="https://img.icons8.com/fluency/25/javascript.png" alt="javascript"/> || <img width="25" height="25" src="https://img.icons8.com/fluency/48/wordpress.png" alt="wordpress"/> || <img width="25" height="25" src="https://img.icons8.com/fluency/25/html-5.png" alt="html-5"/> || <img width="25" height="25" src="https://img.icons8.com/color/25/amazon-web-services.png" alt="amazon-web-services"/> || <img width="25" src="{% static 'images/logo/EL.png'%}" alt="external-elementor-the-wordpress-page-builder-a-simple-intuitive-drag-and-drop-interface-logo-shadow-tal-revivo"/>
+                                      </span>
                                     </p>
                                   </div>
                                 </div>
-                              </div>
+                              
                             </li>
-                            {% comment %} <!-- Item3 - HyperionDev Project Right Column Content --> {% endcomment %}
-                            <li class="list-group-item"><div class="container">
+                            {% comment %} <!-- Item3 - Flume Right Column Content --> {% endcomment %}
+                            <li class="list-group-item">
                               <div class="row">
                                 <div class="col-md-2 d-flex">
-                                  <a href="https://saltylemonkites.com/" target="blank"><img class="img-fluid" src="{% static 'images/logo/Salty-Lemon-Logo_black.webp'%}" alt="Growthpoint Properties"/></a>
+                                  <a href="https://digitlab.co.za/" target="blank"><img class="img-fluid" src="{% static 'images/logo/Flume.png'%}" alt="Growthpoint Properties"/></a>
                                 </div>
-                                <div class="col-md-10 d-flex align-items-center">
-                                  <p> <span class="headings-h2" style="color: black;">Salty Lemon </span><span class="br paragraph-text">A German company that offers a subscription model for sports equipment with full flexibility and security with our integrated insurance.</span></p>                                
+                                <div class="col-md-10 col-12 align-items-center">
+                                  <p> 
+                                    <span class="br headings-h2" style="color: black;">Website Development and Site Enhancements</span>
+                                    <span class="br paragragh-text my-grey">A Full service digital media agency based in Durban, ZA</span>
+                                    <span class="career-date"><strong>Role: </strong>Web Developer </span>
+                                    <span class="career-date br"><strong>Date: </strong> April 2022 - 2023</span>
+                                    <span class="career-date "><strong>Client:</strong> Growthpoint Properties </span>
+                                    <span class="career-date"><a href="https://growthpoint.co.za" target="blank"><img class="img-fluid br-para" width="200" height="" src="{% static 'images/logo/Growthpoint-Logo.png'%}" alt="Growthpoint Properties"/></a></span>
+                                    <span class="br paragraph-text">Site Enhancement: Develop a custom function for page selection "All, Industrial, Office, Trading & Development".</span>
+                                    <span><a href="https://growthpoint.co.za/parks-and-precincts/" target="blank"><span class="showcase-tags">Production Site</span></a></span>
+                                    <span class="br paragraph-text"><img width="25" height="25" src="https://img.icons8.com/officel/25/php-logo.png" alt="php-logo"/> || <img width="25" height="25" src="https://img.icons8.com/fluency/25/javascript.png" alt="javascript"/> || <img width="25" height="25" src="https://img.icons8.com/fluency/48/wordpress.png" alt="wordpress"/> || <img width="25" height="25" src="https://img.icons8.com/fluency/25/html-5.png" alt="html-5"/> || <img width="100" src="{% static 'images/logo/cloudways.png'%}" alt="javascript"/></span>
+                                    
+                                  </p>
+                                  <p>
+                                    <span class="career-date"><a href="https://saltylemonkites.com/" target="blank"><img class="img-fluid br-para" width="200" height="" src="{% static 'images/logo/Salty-Lemon-Logo_black.webp'%}" alt="Growthpoint Properties"/></a></span>
+                                    <span class="br paragraph-text">Full website reconstruction using ElementorPro, accompanied by hosting migration to AWS Lightsail. The rebuilt site has been optimized for image size, resulting in an impressive 85% reduction, with images now using the "webp" format.</span>
+                                    <span class="career-date"><strong>Role: </strong>Web Developer </span>
+                                    <span class="career-date br"><strong>Date: </strong> April 2022 - 2023</span>
+                                    <span class="career-date "><strong>Client:</strong> Salty Lemon GmbH Germany </span>
+                                    <span class="br paragraph-text"><img width="25" height="25" src="https://img.icons8.com/officel/25/php-logo.png" alt="php-logo"/> || <img width="25" height="25" src="https://img.icons8.com/fluency/25/javascript.png" alt="javascript"/> || <img width="25" height="25" src="https://img.icons8.com/fluency/48/wordpress.png" alt="wordpress"/> || <img width="25" height="25" src="https://img.icons8.com/fluency/25/html-5.png" alt="html-5"/> || <img width="25" height="25" src="https://img.icons8.com/color/25/amazon-web-services.png" alt="amazon-web-services"/> || <img width="25" src="{% static 'images/logo/EL.png'%}" alt="external-elementor-the-wordpress-page-builder-a-simple-intuitive-drag-and-drop-interface-logo-shadow-tal-revivo"/>
+                                    </span>
+                                  </p>
                                 </div>
-                              </li>
-                            <li class="list-group-item"><div class="row">
+                              </div>
+                          </li>
+{% comment %} <!-- Item4 - Other Sites --> {% endcomment %}
+
+                            <li class="list-group-item">
+                              <div class="row">
                               <div class="col-md-2 d-flex">
                                 <a href="https://www.levistrauss.com/" target="blank"><img class="img-fluid" src="{% static 'images/logo/Levi-Strauss-dark-Logo.png'%}" alt="Growthpoint Properties"/></a>
                               </div>
@@ -331,6 +365,7 @@
         
       </div>
     </div>
+    
   </section>
 {% comment %} <!-- End FAQ--> {% endcomment %}
 {% comment %}<!-- Call to action Section --> 
