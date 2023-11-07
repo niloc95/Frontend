@@ -45,6 +45,22 @@
   src: url('../fonts/Blinker-Thin.woff2') format('woff2'),
 }
 
+/* Root color scheme */
+
+:root {
+  --frontend-yellow: #FFC436;   
+  --frontend-lite-grey: #bdbdbd;     
+  --frontend-dark-grey: #363636;     
+  --frontend-lite-green: #419197;
+  --frontend-purple: #793FDF;
+  --frontend-burnt-orange: #E25E3E;
+  --frontend-dark-navy: #071952;
+  --frontend-green: #12486B;
+  --frontend-white: #FFF;
+  
+}
+
+
 .headings-h1 {
   font-family: 'Blinker-Regular-400', sans-serif;
   font-size: clamp(1.5rem, -0.258rem + 5.625vw, 3.75rem);
@@ -177,18 +193,6 @@ a:link {
   color: none;
 }
 
-:root {
-  --frontend-yellow: #FFC436;   
-  --frontend-lite-grey: #bdbdbd;     
-  --frontend-dark-grey: #363636;     
-  --frontend-lite-green: #419197;
-  --frontend-purple: #793FDF;
-  --frontend-burnt-orange: #E25E3E;
-  --frontend-dark-navy: #071952;
-  --frontend-green: #12486B;
-  --frontend-white: #FFF;
-  
-}
 .my-yellow{
   color: var(--frontend-yellow);
 }
@@ -378,6 +382,24 @@ body::before {
     padding-top: 15px;
     padding-bottom: 15px;
     border-width: 5px; /* Change this to your desired mobile border width */
+  }
+}
+
+.footer-padding{
+  display: flex; /* Use flexbox to align content vertically */
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+  .footer-padding {
+    padding-top: 15px;
+    padding-bottom: 0px;
+    border-width: 15px; /* Change this to your desired mobile border width */
   }
 }
 
