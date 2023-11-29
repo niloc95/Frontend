@@ -2,30 +2,48 @@
 {% load static %}
 {% block content %}
 
+ 
+
+
 {% comment %} <!-- Hero Section --> {% endcomment %}
-<section id="hero-section" class="hero-nilo bg-img-hero">
+<section id="hero-section" class="hero-nilo">
   
-  {% comment %} <video autoplay loop muted playsinline><source src="{% static 'images/Landing_page.mp4' %}"></video> {% endcomment %}
-  <div class="container hero-text">
-    <p class="sub-heading-p">TECHNOLOGY RETHINKED</p>
-    {% comment %} <p><h2 class="sub-heading-p">Frontend provides all the tools to make your computer science journey easier. Get the best of cloud hosting, data management, networking, hardware, system support and Microsoft 365 – all in one place!</h2></p> {% endcomment %}
-    <p class='headings-h1'>Ensure that your technology plans are in sync with your strategic business objectives</p>
+  <video autoplay loop muted playsinline><source src="{% static 'images/Landing_page.mp4' %}"></video>
+  <div class="container-fluid hero-text-home">
+    <h1 class="headings-h1">{{home_hero_h1}}<span> 👋</span></h1>
+    <p class="sub-heading_p700">{{home_hero_p}}</p><p class='sub-heading-p'> {{home_hero_p2}} </p>
     {% comment %} <a href="{% url 'send_email' %}"> {% endcomment %}
-      {% comment %} <button class="btn btn-outline-light btn-lg">Contact me</button> {% endcomment %}
-    </a>
+      <button class="btn btn-outline-light btn-lg">Contact me</button>
+  </div>
+  <div class="bottom-right-text">
+    <p class="sub-heading-p">Engineered with Django and Bootstrap <a href="https://github.com/niloc95/Frontend" target="blank" alt="Nilo Cara - Software Engineer"><i class="bi bi-github"></i></a></p>
   </div>
 </section>
 {% comment %}<!-- End Hero Section -->{% endcomment %}
 
-<section class="frame-section-text">
-  <div class="container-fluid hero-text">
-      <!-- Your content goes here -->
-      <h2 class="headings-300">Me</h2>
-      <p class="text-dark">Throughout my journey, I've consistently pursued meaningful opportunities and embraced diverse challenges. From owning a small business and being recognized as Employee of the Year at Gijima to earning a Service Excellence merit at SouthernSun and achieving the top rank out of 115 students at Stellenbosch University's Software Engineering Bootcamp, my dedication to helping others and solving problems has remained unwavering.
 
-      </p>
-  
+
+
+<section id="aboutme" class="frame-section-about">
+  <div class="container-fluid">
+    <div class="align-items-center justify-content-center d-md-flex">
+      <div>
+        <h2 class="headings-h1" style="color: black;">Me</h2>
+        {% comment %} <div>
+          <p class="paragragh-text"><strong>Current Focus:</strong> Python || Django || Frontend Engineering || Frontend Libraries</p>
+        </div> {% endcomment %}
+        <p class="paragragh-text">Throughout my diverse journey, I've consistently sought meaningful opportunities and embraced challenges. From owning a small business to being recognized as Employee of the Year at Gijima, earning a Service Excellence merit at SouthernSun, and achieving top rank at Stellenbosch University's Software Engineering Bootcamp, my dedication to problem-solving and helping others has remained unwavering. With over 15 years in the tech industry, I transitioned from a junior support analyst to a Group Operations Manager at Standard Bank Group before taking a hiatus in 2017 for a personal project. Returning in 2019 as a freelance software developer, I've honed expertise in Python, JavaScript, HTML, CSS, MySQL, AWS, and continue to explore new frameworks and languages. I excel as a well-rounded front-end developer using JavaScript and web development tools, occasionally delving into backend solutions with Node or Python, and have recently joined Hyperion Dev with Stellenbosch University and Harvard University's CS50 to further advance my career as a software engineer.</p>
+        {% comment %} <p class="paragragh-text">Being a web developer, I find immense satisfaction in harnessing my meticulous attention to detail, unwavering passion for creation, and a resolute commitment to my mission to actively contribute to global transformation. This is precisely why I am eagerly looking forward to making a substantial mark within a rapidly expanding organization.</p> {% endcomment %}
+        <div>
+          <p class="paragragh-text"><strong>Current Focus:</strong> Python || Django || Frontend Engineering || Frontend Libraries</p>
+        </div>
+      </div>
+      <img class="img-fluid pb-5" src="{% static 'images/400x400_NO_BG.png'%}"  alt="" />
+    </div>
   </div>
+  {% comment %} <!-- Anchor point for Accordion section--> {% endcomment %}
+  <div id="career"></div>
+  {% comment %} <!-- End Anchor point for Accordion section--> {% endcomment %}
 </section>
 
 

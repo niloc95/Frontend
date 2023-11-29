@@ -9,8 +9,8 @@
   
   {% comment %} <video autoplay loop muted playsinline><source src="{% static 'images/Landing_page.mp4' %}"></video> {% endcomment %}
   <div class="container-fluid hero-text">
-    <h1 class="headings-h1">Hi, I’m<span class="my-yellow headings-h1"> <strong>Nilo Cara</strong> 👋</span></h1>
-    <p class="headings-h1">a software engineer from {<span><a class="my-yellow" href="https://maps.app.goo.gl/1hTYk8r9s7ugn9b47" target="blank" alt="Nilo Cara - Software Engineer">Sandton, ZA</a></span>}</p>
+    <h1 class="headings-h1">Hi, I’m<span class="my-yellow headings-h1"> <strong>{{fname}} {{lname}}</strong> 👋</span></h1>
+    <p class="headings-h1">a software engineer from {<span><a class="my-yellow" href="https://maps.app.goo.gl/1hTYk8r9s7ugn9b47" target="blank" alt="Nilo Cara - Software Engineer">{{pname}}</a></span>}</p>
     
     {% comment %} <a href="{% url 'send_email' %}"> {% endcomment %}
       <button class="btn btn-outline-light btn-lg">Contact me</button>
