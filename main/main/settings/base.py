@@ -62,6 +62,15 @@ TEMPLATES = [
 WSGI_APPLICATION = 'main.wsgi.application'
 
 
+# Database
+# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 # Password validation
@@ -117,7 +126,7 @@ EMAIL_USE_TLS = True  # Set this to False for non-TLS, True for TLS
 EMAIL_USE_SSL = False # Set this to True if you're using SSL
 EMAIL_HOST_USER = 'za_admin@frontend.co.za'  # Your SMTP email address
 EMAIL_HOST_PASSWORD = '7856z%8e%6^6sL!bA#3vX2*P'  # Your SMTP email password mixhmepcggzywbiu
-EMAIL_SUBJECT_PREFIX = '[Your App Name] '  # Optional prefix for email subjects
+EMAIL_SUBJECT_PREFIX = '[Your App Name]'  # Optional prefix for email subjects
 COMPANY_CONTACT_NAME = 'Frontend Software Engineering'
 PERSONAL_CONTACT_NAME = 'Mark Jones'
 DEFAULT_FROM_EMAIL = 'za_admin@frontend.co.za'
